@@ -212,6 +212,7 @@ alias dcb='docker-compose build'
 alias dcu='docker-compose up'
 alias dcd='docker-compose down'
 alias dcud='docker-compose up -d'
+alias dps='docker ps'
 
 # Git
 alias gs='git status'
