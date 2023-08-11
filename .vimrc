@@ -1,0 +1,13 @@
+set rtp+=/usr/local/opt/fzf
+set number
+set autoindent
+set expandtab
+set hlsearch
+set ignorecase
+set smartcase
+set encoding=utf-8
+set ruler
+set backspace=indent,eol,start
+set background=dark
+syntax on
+colorscheme gruvbox
