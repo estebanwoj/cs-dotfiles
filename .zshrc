@@ -233,6 +233,8 @@ alias lt='exa -lTlL=2 --group-directories-first --git'
 alias lsa='exa -a'
 alias ls='exa'
 alias rmf='rm -rf'
+nr='npm run'
+nrw='npm run watch'
 
 SPACESHIP_DOCKER_SHOW=false
 SPACESHIP_NODE_SHOW=false
