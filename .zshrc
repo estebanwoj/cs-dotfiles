@@ -20,7 +20,6 @@ setopt cdable_vars          # cd to named dirs without ~ at beginning
 
 # Installs
 mkdir -p "$HOME/.zsh"
-mkdir -p "$HOME/.zsh/zsh-plugins"
 
 if [[ ! -d "$HOME/.zsh/spaceship" ]]; then
     git clone --depth=1 https://github.com/spaceship-prompt/spaceship-prompt.git "$HOME/.zsh/spaceship"
