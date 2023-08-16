@@ -208,6 +208,7 @@ zstyle ':completion:*:*:(subl|vim|nvim|vi|emacs|nano|e|v|s):*:*files' ignored-pa
 
 # Docker
 alias dc='docker-compose'
+alias dce='docker-compose exec'
 alias dcb='docker-compose build'
 alias dcu='docker-compose up'
 alias dcd='docker-compose down'
