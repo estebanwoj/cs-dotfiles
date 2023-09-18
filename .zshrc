@@ -43,7 +43,7 @@ fi
 if [[ ! -x /usr/local/bin/exa ]]; then
     wget https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-v0.10.1.zip -O ~/exa.zip; unzip -d ~/exa ~/exa.zip; rm ~/exa.zip;
     sudo mv ~/exa/bin/exa /usr/local/bin;
-    sudo chown codespace:codespace /usr/local/bin/exa;
+    sudo chown 1000:1000 /usr/local/bin/exa;
     rm -rf ~/exa;
 fi
 
