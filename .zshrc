@@ -23,6 +23,7 @@ mkdir -p "$HOME/.zsh"
 
 export ZSH=$HOME/.oh-my-zsh
 
+# require powerline fonts : https://github.com/powerline/fonts 
 ZSH_THEME="agnoster"
 
 plugins=(git)
