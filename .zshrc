@@ -24,7 +24,11 @@ mkdir -p "$HOME/.zsh"
 if [[ ! -d "$HOME/.zsh/spaceship" ]]; then
     git clone --depth=1 https://github.com/spaceship-prompt/spaceship-prompt.git "$HOME/.zsh/spaceship"
 fi
-source "$HOME/.zsh/spaceship/spaceship.zsh"
+#source "$HOME/.zsh/spaceship/spaceship.zsh"
+
+source $ZSH/oh-my-zsh.sh
+
+ZSH_THEME="agnoster"
 
 if [[ ! -f "$HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" ]]; then
     git clone https://github.com/zsh-users/zsh-autosuggestions.git "$HOME/.zsh/zsh-autosuggestions"
@@ -237,18 +241,3 @@ alias rmf='rm -rf'
 alias nr='npm run'
 alias nrw='npm run watch'
 
-SPACESHIP_DOCKER_SHOW=false
-SPACESHIP_NODE_SHOW=false
-SPACESHIP_ASYNC_SHOW=false
-SPACESHIP_PHP_SHOW=false
-SPACESHIP_PACKAGE_SHOW=false
-SPACESHIP_DIR_PREFIX=''
-SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_PROMPT_SEPARATE_LINE=false
-SPACESHIP_CHAR_SYMBOL='⇨  '
-SPACESHIP_TIME_FORMAT='%T'
-SPACESHIP_TIME_COLOR='208'
-SPACESHIP_TIME_SHOW=false
-SPACESHIP_EXEC_TIME_SHOW=false
-SPACESHIP_DOCKER_SHOW=false
-SPACESHIP_DOCKER_COMPOSE_SHOW=false
