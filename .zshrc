@@ -21,14 +21,13 @@ setopt cdable_vars          # cd to named dirs without ~ at beginning
 # Installs
 mkdir -p "$HOME/.zsh"
 
-if [[ ! -d "$HOME/.zsh/spaceship" ]]; then
-    git clone --depth=1 https://github.com/spaceship-prompt/spaceship-prompt.git "$HOME/.zsh/spaceship"
-fi
-#source "$HOME/.zsh/spaceship/spaceship.zsh"
-
-source $ZSH/oh-my-zsh.sh
+export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="agnoster"
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
 
 if [[ ! -f "$HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" ]]; then
     git clone https://github.com/zsh-users/zsh-autosuggestions.git "$HOME/.zsh/zsh-autosuggestions"
@@ -240,4 +239,3 @@ alias ls='exa'
 alias rmf='rm -rf'
 alias nr='npm run'
 alias nrw='npm run watch'
-
